@@ -1,5 +1,6 @@
 package com.cydeo.step_definition_cucumber;
 
+import com.cydeo.utilities.Driver;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -10,6 +11,7 @@ import java.util.Map;
 public class netflix_StepDef {
     @Given("I like {string}")
     public void i_like(String string) {
+
         System.out.println("This is from Given String param");
     }
 
@@ -30,5 +32,10 @@ public class netflix_StepDef {
     @Then("I should get right recommendation")
     public void i_should_get_right_recommendation() {
 
+    }
+
+    @When("I go to homepage but")
+    public void iGoToHomepageBut() {
+        Driver.getDriver().get("https://google.com/");
     }
 }

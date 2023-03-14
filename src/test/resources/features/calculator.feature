@@ -6,7 +6,7 @@ Feature: Calculator should work for simple math
     Given Calculator is open
 
   Scenario: Should be able to add two numbers
-    When I add 2 with 3
+    When I add 2 with 3 asd
     Then I should get 5
 
   Scenario: Should be able to add two numbers 2

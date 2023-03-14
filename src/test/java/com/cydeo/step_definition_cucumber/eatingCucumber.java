@@ -1,5 +1,6 @@
 package com.cydeo.step_definition_cucumber;
 
+import com.cydeo.utilities.Driver;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -11,6 +12,7 @@ public class eatingCucumber {
     }
     @When("he eats some cucumbers")
     public void he_eats_some_cucumbers() {
+            Driver.getDriver().get("https://google.com/");
         System.out.println("It is from When");
     }
     @Then("he will be full")

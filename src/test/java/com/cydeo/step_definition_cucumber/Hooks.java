@@ -5,11 +5,11 @@ import io.cucumber.java.Before;
 
 public class Hooks {
 
-    @Before
+   // @Before
     public void setup(){
         System.out.println("before scenario");
     }
-    @After
+   // @After
     public void tearDown(){
         System.out.println("after scenario");
     }

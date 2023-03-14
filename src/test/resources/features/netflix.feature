@@ -15,7 +15,7 @@ Feature: Movie suggestion feature
       | drama     |
       | cartoon   |
       | adventure |
-    When I go to homepage
+    When I go to homepage but
       Then I should get right recommendation
 
   Scenario: Movie search datatable map

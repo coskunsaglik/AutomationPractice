@@ -16,7 +16,7 @@ import org.junit.runner.RunWith;
        features = "src/test/resources/features", //copy the content root from resources
         glue = "com/cydeo/step_definition_cucumber", //copy the source root from step_definition
         dryRun = false,
-        tags = " " //run only @ddt_testing
+        tags = "" //run only @ddt_testing
         //publish = true // create a public link for the report of our code
 
 
